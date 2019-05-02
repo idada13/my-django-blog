@@ -9,7 +9,9 @@
     </head>
     <body>
     <div class="page-header">
+      {% if user.is.authenticated %}
         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+      {% endif %}  
         <h1><a href="/">Czarek, to Twoj nowy blog</a></h1>
     </div>
     <div class="content container">
