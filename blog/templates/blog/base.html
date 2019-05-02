@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
+  </head>
+  <body>
     <div class="page-header">
       {% if user.is.authenticated %}
         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-      {% endif %}  
+      {% endif %}
         <h1><a href="/">Czarek, to Twoj nowy blog</a></h1>
     </div>
     <div class="content container">
@@ -22,5 +22,5 @@
             </div>
         </div>
     </div>
-</body>
+  </body>
 </html>
